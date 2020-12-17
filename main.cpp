@@ -7,46 +7,46 @@ setlocale(LC_ALL, "Russian");
 	double a, b;
 	int x, operation, s;
 	do{
-		cout << "Введите число a: ";
+		cout << "Enter a: ";
 		cin >> a;
-		cout << "Введите число b: ";
+		cout << "Enter b: ";
 		cin >> b;
 
-		cout << "Выберите операцию для выполнения:" << endl;
-		cout << "1. Сложение" << endl;
-		cout << "2. Вычитание" << endl;
-		cout << "3. Умножение" << endl;
-		cout << "4. Деление" << endl;
-		cout << "0. Выход из программы" << endl;
-		cout << "Ввод операции: ";
+		cout << "Change operation:" << endl;
+		cout << "1. a + b" << endl;
+		cout << "2. a - b " << endl;
+		cout << "3. a * b " << endl;
+		cout << "4. a / b" << endl;
+		cout << "0. Escape" << endl;
+		cout << "Input of the operation: ";
 		cin >> operation;
 switch (operation)
 		{
 		case 1:
 			cout << "a + b = ";
 			cout << MySum(a, b) << endl;
-			cout << "Для возврата в меню нажмите 1. Для выхода из программы нажмите 0:: ";
+			cout << "To return write 1. To escape write 0: ";
 			cin >> s;
 			system("cls");
 			break;
 		case 2:
 			cout << "a - b = ";
 			cout << MySub(a, b) << endl;
-			cout << "Для возврата в меню нажмите 1. Для выхода из программы нажмите 0: ";
+			cout << "To return write 1. To escape write 0: ";
 			cin >> s;
 			system("cls");
 			break;
 		case 3:
 			cout << "a * b = ";
 			cout << MyMul(a, b) << endl;
-			cout << "Для возврата в меню нажмите 1. Для выхода из программы нажмите 0: ";
+			cout << "To return write 1. To escape write 0: ";
 			cin >> s;
 			system("cls");
 			break;
 		case 4:
 			cout << "a / b = ";
 			cout << MyDiv(a, b) << endl;
-			cout << "Для возврата в меню нажмите 1. Для выхода из программы нажмите 0: ";
+			cout << "To return write 1. To escape write 0: ";
 			cin >> s;
 			system("cls");
 	}
