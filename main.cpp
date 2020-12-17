@@ -20,8 +20,38 @@ setlocale(LC_ALL, "Russian");
 		cout << "0. Выход из программы" << endl;
 		cout << "Ввод операции: ";
 		cin >> operation;
+switch (operation)
+		{
+		case 1:
+			cout << "a + b = ";
+			cout << MySum(a, b) << endl;
+			cout << "Для возврата в меню нажмите 1. Для выхода из программы нажмите 0:: ";
+			cin >> s;
+			system("cls");
+			break;
+		case 2:
+			cout << "a - b = ";
+			cout << MySub(a, b) << endl;
+			cout << "Для возврата в меню нажмите 1. Для выхода из программы нажмите 0: ";
+			cin >> s;
+			system("cls");
+			break;
+		case 3:
+			cout << "a * b = ";
+			cout << MyMul(a, b) << endl;
+			cout << "Для возврата в меню нажмите 1. Для выхода из программы нажмите 0: ";
+			cin >> s;
+			system("cls");
+			break;
+		case 4:
+			cout << "a / b = ";
+			cout << MyDiv(a, b) << endl;
+			cout << "Для возврата в меню нажмите 1. Для выхода из программы нажмите 0: ";
+			cin >> s;
+			system("cls");
+	}
 
-
-
-return 0;
+	} while (s != 0);
+	system("pause");
+	return 0;
 }
