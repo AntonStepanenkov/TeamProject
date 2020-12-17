@@ -1,4 +1,4 @@
-﻿#include "funcs.h"
+#include "funcs.h"
 #include <iostream>
 using namespace std;
 double MySum(double a, double b)
@@ -19,6 +19,6 @@ double MyDiv(double a, double b)
 		return a / b;
 	}
 	else
-		cout << "На ноль делить нельзя!";
+		cout << "You can't divide by zero!";
 
 }
